@@ -1,0 +1,54 @@
+body {
+    background-color: whitesmoke;
+    text-align: center;
+    font-family: 'Alegreya Sans', Ariel, sans-serif;
+
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    color: #1F2632;
+    margin: auto;
+    font-size: 4rem;
+}
+
+#except-title {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+#img-div {
+    background-color: white;
+    padding: 10px;
+    margin: 0 15px;
+    width: 430px;
+    border-radius: 10px;
+}
+
+@media (min-width: 900px) {
+    #except-title {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+#img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+#img-caption {
+    margin: 10px 0 0 0;
+    font-size: 25px;
+}
+
+#tribute-info {
+    font-family: 'Alegreya', serif;
+}
