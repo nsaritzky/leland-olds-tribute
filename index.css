@@ -7,41 +7,38 @@ body {
 
 #main {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: initial;
+    justify-content: space-around;
+    padding: 15px 0;
 }
 
 #title {
     color: #1F2632;
     margin: auto;
     font-size: 4rem;
-}
-
-#except-title {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
+    width: 100%;
 }
 
 #img-div {
     background-color: white;
     padding: 10px;
     margin: 0 15px;
-    width: 430px;
+    max-width: min(100%, 400px);
+    height: min-content;
     border-radius: 10px;
+    display: block;
 }
 
-@media (min-width: 900px) {
-    #except-title {
-        flex-direction: row;
-        justify-content: space-around;
-    }
+p {
+    width: 100%;
 }
 
-#img {
+#image {
     display: block;
     margin: auto;
-    max-width: 100%;
+    width: 100%;
 }
 
 #img-caption {
@@ -51,4 +48,6 @@ body {
 
 #tribute-info {
     font-family: 'Alegreya', serif;
+    text-align: justify;
+    max-width: 40em;
 }
